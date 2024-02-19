@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    {% load website_tags %}
+    <!-- start banner Area -->
+    {% include 'website/website-banner-area.html' %}
+    <!-- End banner Area -->
+
+    <!-- Start popular-destination Area -->
+    {% include 'website/website-popular-destination.html' %}
+    <!-- End popular-destination Area -->
+
+    <!-- Start other-issue Area -->
+    {% include 'website/website-other-issue-area.html' %}
+    <!-- End other-issue Area -->
+
+    <!-- Start home-about Area -->
+    {% include 'website/website-home-about-area.html' %}
+    <!-- End home-about Area -->
+
+    <!-- Start blog Area -->
+    {% latestposts %}
+    <!-- End recent-blog Area -->
+{% endblock %}
+{% block title %}
+    Home
+{% endblock %}
